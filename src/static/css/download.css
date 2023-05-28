@@ -1,0 +1,47 @@
+@import "base.css";
+
+.mewi {
+    margin: 1em;
+    font-size: 5vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 8vh;
+    margin: 1vh;
+}
+
+form {
+    display: inline-block;
+    margin-inline: auto;
+    text-align: left;
+    max-height: 50vh;
+    width: 60vw;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 2em;
+}
+
+label {
+    font-size: 4vh;
+}
+
+input[type=submit] {
+    transform: scale(4);
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    margin: 8vh auto;
+}

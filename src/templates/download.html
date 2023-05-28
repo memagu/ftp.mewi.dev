@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../static/css/download.css">
+</head>
+<body>
+    <h1 class="mewi"><a class="text" href="/">&lt/mewi.dev&gt</a></h1>
+    <div class="container">
+        <h2 class="form-title text">Select files for download</h2>
+        <form id="file-selection" method="POST">
+            {% for filename in filenames %}
+            <input type="checkbox" id="{{filename}}" name="{{filename}}" value="{{filename}}">
+            <label class="text" for="{{filename}}">{{filename}}</label><br>
+            {% endfor %}
+        </form>
+        <input class="text button-like" type="submit" value="Download" form="file-selection">
+    </div>
+</body>
+</html>
